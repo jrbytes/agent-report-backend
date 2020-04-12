@@ -1,9 +1,12 @@
 const express = require('express')
 
-const PessoaController = require('./controllers/PessoaController')
+const PersonController = require('./controllers/PersonController')
 
 const routes = express.Router()
 
-routes.get('/pessoas', PessoaController.index)
+routes.get('/person', PersonController.index)
+routes.get('/person/:id', PersonController.findOne)
+routes.post('/person', PersonController.create)
+routes.patch('/person/:id', PersonController.update)
 
 module.exports = routes

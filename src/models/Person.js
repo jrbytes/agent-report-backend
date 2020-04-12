@@ -2,7 +2,7 @@ const mongoose = require('../database')
 
 const PersonSchema = mongoose.Schema({
   name: { type: String, required: true },
-  gender: { type: String, enum: ['m', 'f'], required: true },
+  gender: { type: String, enum: ['m', 'f']},
   mother: String,
   birth_date: { type: String, required: true },
   medical_records: { type: Number, required: true },

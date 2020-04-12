@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-require('dontenv').config()
+require('dotenv').config()
 
 mongoose.set('useCreateIndex', true)
 mongoose.set('useFindAndModify', false)
