@@ -1,6 +1,6 @@
-const express = require('express')
+import express from 'express'
 
-const PersonController = require('./controllers/PersonController')
+import PersonController from './controllers/PersonController'
 
 const routes = express.Router()
 
